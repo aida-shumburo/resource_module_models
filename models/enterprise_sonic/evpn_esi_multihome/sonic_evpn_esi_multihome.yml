@@ -50,7 +50,7 @@ DOCUMENTATION: |
             type: int
           startup_delay:
             description:
-              - Startup delay
+              - Startup delay in seconds
               - Has a range between 0 and 3600
               - Default is 300
               - Specify 0 to disable startup delay
