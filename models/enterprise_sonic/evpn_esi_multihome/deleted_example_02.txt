@@ -21,6 +21,5 @@
 #
 # show running-configuration evpn-mh
 #
-# evpn esi-multihoming
 #
 # 
