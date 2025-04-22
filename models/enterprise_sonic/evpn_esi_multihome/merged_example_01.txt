@@ -1,0 +1,23 @@
+# Using Merged
+#
+# Before state:
+#---------------
+#
+# show running-configuration evpn-mh
+#
+#
+#
+
+- name: Merge specific option from evpn_esi_multihome configuration
+    sonic_evpn_esi_multihome:
+        config:
+            startup-delay: 300
+        state: merged
+
+# After State:
+#--------------
+#
+# show running-configuration evpn-mh
+#
+# evpn esi-multihoming
+#  startup-delay 300
