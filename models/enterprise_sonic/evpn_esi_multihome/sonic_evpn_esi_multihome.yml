@@ -39,21 +39,21 @@ DOCUMENTATION: |
               - MAC hold time in seconds
               - Has a range between 0 and 86400
               - Default is 1080
-              - Enter 0 to disable MAC hold time
+              - Specify 0 to disable MAC hold time
             type: int
           neigh_holdtime:
             description:
               - Neighbor hold time in seconds
               - Has a range between 0 and 86400
               - Default is 1080
-              - Enter 0 to disable neighbor hold time
+              - Specify 0 to disable neighbor hold time
             type: int
           startup_delay:
             description:
               - Startup delay
               - Has a range between 0 and 3600
               - Default is 300
-              - Enter 0 to disable startup delay
+              - Specify 0 to disable startup delay
             type: int
       state:
         description:
@@ -65,8 +65,5 @@ EXAMPLES:
   - deleted_example_01.txt
   - deleted_example_02.txt
   - merged_example_01.txt
-  - merged_example_02.txt
   - replaced_example_01.txt
-  - replaced_example_02.txt
   - overridden_example_01.txt
-  - overridden_example_02.txt

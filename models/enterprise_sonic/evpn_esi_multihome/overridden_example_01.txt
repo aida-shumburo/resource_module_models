@@ -15,6 +15,7 @@
   sonic_evpn_esi_multihome:
     config:
         startup-delay: 200
+        mac_holdtime: 500
     state: overridden
 
 # After State:
@@ -24,4 +25,4 @@
 #
 # evpn esi-multihoming
 #  startup-delay 200
-# 
+#  mac_holdtime: 500

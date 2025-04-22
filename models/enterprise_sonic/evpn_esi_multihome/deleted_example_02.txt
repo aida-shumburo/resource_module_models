@@ -13,8 +13,7 @@
 
 - name: Delete soecific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
-    config:
-        df-election: 3
+    config: {}
     state: deleted
 
 # After State:
@@ -23,7 +22,5 @@
 # show running-configuration evpn-mh
 #
 # evpn esi-multihoming
-#  mac-holdtime 1080
-#  neigh-holdtime 1080
-#  startup-delay 300
+#
 # 

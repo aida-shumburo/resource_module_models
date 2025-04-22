@@ -9,12 +9,13 @@
 #  mac-holdtime 1080
 #  neigh-holdtime 1080
 #  startup-delay 300
-# 
+#  df-election: 3
 
 - name: Replace specific option from sonic_evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        startup-delay: 200
+        neigh-holdtime: 200
+        df-election: 600
     state: replaced
 
 # After State:
@@ -23,5 +24,5 @@
 # show running-configuration evpn-mh
 #
 # evpn esi-multihoming
-#  startup-delay 200
-# 
+#  neigh-holdtime 200
+#  df-election: 600
