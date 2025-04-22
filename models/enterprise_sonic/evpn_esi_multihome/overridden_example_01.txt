@@ -11,7 +11,7 @@
 #  startup-delay 300
 # 
 
-- name: Override specific option from sonic_evpn_esi_multihome configuration
+- name: Override specific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
         startup-delay: 200

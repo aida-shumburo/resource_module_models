@@ -11,7 +11,7 @@
 #  startup-delay 300
 #  df-election: 3
 
-- name: Replace specific option from sonic_evpn_esi_multihome configuration
+- name: Replace specific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
         neigh-holdtime: 200
