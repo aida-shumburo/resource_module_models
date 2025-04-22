@@ -14,7 +14,7 @@
 - name: Replace specific option from sonic_evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        startup-delay: 200
+        neigh-holdtime: 200
     state: replaced
 
 # After State:
@@ -23,5 +23,5 @@
 # show running-configuration evpn-mh
 #
 # evpn esi-multihoming
-#  startup-delay 200
+#  neigh-holdtime 200
 # 

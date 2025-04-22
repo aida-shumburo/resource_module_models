@@ -1,4 +1,4 @@
-# Using replaced
+# Using overridden
 #
 # Before state:
 #----------------
@@ -11,11 +11,11 @@
 #  startup-delay 300
 # 
 
-- name: Replace specific option from sonic_evpn_esi_multihome configuration
+- name: Override specific option from sonic_evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        startup-delay: 200
-    state: replaced
+        mac_holdtime: 500
+    state: overridden
 
 # After State:
 #--------------
@@ -23,5 +23,5 @@
 # show running-configuration evpn-mh
 #
 # evpn esi-multihoming
-#  startup-delay 200
+#  mac_holdtime 500
 # 
