@@ -9,7 +9,7 @@
 #  mac-holdtime 1080
 #  neigh-holdtime 1080
 #  startup-delay 300
-#  df-election 3
+#  df-election-time 3
 
 - name: Delete soecific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:

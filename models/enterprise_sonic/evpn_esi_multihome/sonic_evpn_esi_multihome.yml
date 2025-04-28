@@ -22,7 +22,7 @@ DOCUMENTATION: |
           - EVPN ESI multihoming configuration
         type: dict
         suboptions:
-          df_election:
+          df_election_time:
             description:
               - Election timer value in seconds
               - Has a range between 0 and 86400
