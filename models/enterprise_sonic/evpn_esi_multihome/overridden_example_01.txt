@@ -14,7 +14,7 @@
 - name: Override specific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        startup-delay: 200
+        startup_delay: 200
         mac_holdtime: 500
     state: overridden
 

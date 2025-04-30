@@ -14,7 +14,7 @@
 - name: Delete soecific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        mac-holdtime: 1080
+        mac_holdtime: 1080
     state: deleted
 
 # After State:

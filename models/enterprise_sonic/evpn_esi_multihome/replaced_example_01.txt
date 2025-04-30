@@ -14,8 +14,8 @@
 - name: Replace specific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
     config:
-        neigh-holdtime: 200
-        df-election_time: 600
+        neigh_holdtime: 200
+        df_election_time: 600
     state: replaced
 
 # After State:

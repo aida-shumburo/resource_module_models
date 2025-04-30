@@ -10,8 +10,8 @@
 - name: Merge specific option from evpn_esi_multihome configuration
   sonic_evpn_esi_multihome:
       config:
-          startup-delay: 300
-          es-activation-delay: 3000
+          startup_delay: 300
+          es_activation_delay: 3000
       state: merged
 
 # After State:
