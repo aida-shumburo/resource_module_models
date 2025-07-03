@@ -29,6 +29,11 @@ DOCUMENTATION: |
             type: list
             elements: dict
             suboptions:
+              name:
+                description:
+                  - Name of this agentaddress entry
+                  - The name is auto-generated if not explicitly specified for agentaddress entry creation
+                type: str
               ip:
                 description:
                   - IPv4 or IPv6 address
@@ -158,6 +163,7 @@ DOCUMENTATION: |
           enable_trap:
             description:
               - Specify trap(s) to enable. The all choice indicates all traps should be enabled
+              - The "all" choice can not be specified unless none of the other choices is specified
             type: list
             elements: str
             choices:
@@ -182,6 +188,7 @@ DOCUMENTATION: |
               access:
                 description:
                   - List of access rights configuration for a group
+                  - The old access list will be replaced with the new access list
                 type: list
                 elements: dict
                 suboptions:
@@ -193,7 +200,7 @@ DOCUMENTATION: |
                     choices:
                       - any
                       - v2c
-                      - v3
+                      - usm
                   security_level:
                     description:
                       -  When I(security_model=v3), specifies the minimum security level under which the access rights apply.
@@ -216,14 +223,24 @@ DOCUMENTATION: |
           host: 
             description:
               - List of SNMP host configuration
+              - I(community) and I(user) are mutually exclusive
             type: list
             elements: dict
             suboptions:
+              name:
+                description:
+                  - Name of the host
+                  - The name is auto-generated if not explicitly specified for host entry creation
+                type: str
               ip:
                 description:
                   - IPv4 or IPv6 address
                 type: str
                 required: true
+              source_interface:
+                description:
+                  - Name of source interface
+              type: str
               community:
                 description:
                   - SNMP community for the host

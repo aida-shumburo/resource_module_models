@@ -13,7 +13,7 @@
       group:
         - name: group-floor2
           access:
-            security_model: v3
+            security_model: v2c
             security_level: auth-priv
             read_view: r_view
             write_view: w_view
@@ -29,4 +29,4 @@
 # show running-configuration | grep snmp
 #
 # snmp-server community comm1 group group-lab
-# snmp-server group group-floor2 v3 priv read r_view write w_view notify n_view
+# snmp-server group group-floor2 v2c priv read r_view write w_view notify n_view
