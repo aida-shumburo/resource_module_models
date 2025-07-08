@@ -204,6 +204,8 @@ DOCUMENTATION: |
                   security_level:
                     description:
                       -  When I(security_model=v3), specifies the minimum security level under which the access rights apply.
+                    type: str
+                    required: true
                     choices:
                       - no-auth-no-priv
                       - auth-no-priv
